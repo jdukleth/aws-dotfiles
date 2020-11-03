@@ -1,0 +1,26 @@
+# systemctl convenience
+alias running-services='systemctl list-units --type=service --state=running'
+
+# groups convenience
+alias active-groups='cat -v /etc/group'
+
+# reload bash configuration
+alias reload="source ${HOME}/.bashrc"
+
+# directory navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -cF --color=auto'
+
+# syntax coloring for cat
+alias ccat='pygmentize -O style=monokai -f console256 -g'
+
+# therapeutic antics
+# eval "$(thefuck --alias)"
+
